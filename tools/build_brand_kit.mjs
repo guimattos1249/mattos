@@ -94,8 +94,8 @@ const cardBack = `<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="6
   <line x1="430" y1="105" x2="430" y2="495" stroke="#e2e8f0" stroke-width="3"/>
   <text x="490" y="165" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="49" font-weight="800" letter-spacing="2">SEU NOME</text>
   <text x="492" y="210" fill="#2563eb" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" letter-spacing="4">CARGO / ESPECIALIDADE</text>
-  <g fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="25"><text x="492" y="300">(00) 00000-0000</text><text x="492" y="350">contato@mattosdigitalsolutions.com.br</text><text x="492" y="400">mattosdigitalsolutions.com.br</text><text x="492" y="450">@mattos.digitalsolutions</text></g>
-  <circle cx="465" cy="292" r="6" fill="#14b8a6"/><circle cx="465" cy="342" r="6" fill="#14b8a6"/><circle cx="465" cy="392" r="6" fill="#14b8a6"/><circle cx="465" cy="442" r="6" fill="#14b8a6"/>
+  <g fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="25"><text x="492" y="340">(00) 00000-0000</text><text x="492" y="410">@mattos_solucoesdigitais</text></g>
+  <circle cx="465" cy="332" r="6" fill="#14b8a6"/><circle cx="465" cy="402" r="6" fill="#14b8a6"/>
 </svg>`;
 await render(Buffer.from(cardBack), '09-cartao-visita-verso-editavel.png', 1050, 600);
 
