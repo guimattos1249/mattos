@@ -36,18 +36,37 @@ await render(principal, '01-logo-principal-fundo-claro.png', 3000, 900, '#ffffff
 await render(principal, '02-logo-principal-transparente.png', 3000, 900);
 await render(horizontal, '03-logo-horizontal-fundo-claro.png', 2480, 600, '#ffffff');
 await render(light, '04-logo-horizontal-fundo-escuro.png', 2480, 600, '#071a3a');
-await render(mono, '05-monograma.png', 1080, 1080);
+// O arquivo principal passa a ser opaco para não exibir quinas brancas em visualizadores.
+await render(mono, '05-monograma.png', 1080, 1080, '#071a3a');
 
 const monoUri = `data:image/svg+xml;base64,${mono.toString('base64')}`;
 const lightUri = `data:image/svg+xml;base64,${light.toString('base64')}`;
 const horizontalUri = `data:image/svg+xml;base64,${horizontal.toString('base64')}`;
 
+const monogramRounded = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
+  <rect width="1080" height="1080" fill="#0f172a"/>
+  <rect x="42" y="42" width="996" height="996" rx="210" fill="#071a3a"/>
+  <image href="${monoUri}" x="18" y="18" width="1044" height="1044"/>
+</svg>`;
+await render(Buffer.from(monogramRounded), '05a-monograma-quinas-arredondadas.png', 1080, 1080, '#0f172a');
+await render(mono, '05b-monograma-fundo-totalmente-preenchido.png', 1080, 1080, '#071a3a');
+
 const avatar = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
   <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071a3a"/><stop offset="1" stop-color="#0f172a"/></linearGradient><radialGradient id="glow"><stop stop-color="#2563eb" stop-opacity=".28"/><stop offset="1" stop-color="#071a3a" stop-opacity="0"/></radialGradient></defs>
-  <rect width="1080" height="1080" rx="220" fill="url(#bg)"/><circle cx="750" cy="280" r="430" fill="url(#glow)"/>
+  <rect width="1080" height="1080" fill="url(#bg)"/><circle cx="750" cy="280" r="430" fill="url(#glow)"/>
   <image href="${monoUri}" x="150" y="150" width="780" height="780"/>
 </svg>`;
-await render(Buffer.from(avatar), '06-avatar-instagram.png', 1080, 1080);
+await render(Buffer.from(avatar), '06-avatar-instagram.png', 1080, 1080, '#071a3a');
+
+const avatarRounded = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071a3a"/><stop offset="1" stop-color="#0f172a"/></linearGradient><radialGradient id="glow"><stop stop-color="#2563eb" stop-opacity=".28"/><stop offset="1" stop-color="#071a3a" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1080" height="1080" fill="#0f172a"/>
+  <rect x="36" y="36" width="1008" height="1008" rx="205" fill="url(#bg)"/>
+  <circle cx="750" cy="280" r="430" fill="url(#glow)"/>
+  <image href="${monoUri}" x="150" y="150" width="780" height="780"/>
+</svg>`;
+await render(Buffer.from(avatarRounded), '06a-avatar-instagram-quinas-arredondadas.png', 1080, 1080, '#0f172a');
+await render(Buffer.from(avatar), '06b-avatar-instagram-fundo-totalmente-preenchido.png', 1080, 1080, '#071a3a');
 
 const post = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350">
   <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#020b1d"/><stop offset=".6" stop-color="#071a3a"/><stop offset="1" stop-color="#0d3550"/></linearGradient><linearGradient id="line"><stop stop-color="#2563eb"/><stop offset="1" stop-color="#14b8a6"/></linearGradient></defs>
