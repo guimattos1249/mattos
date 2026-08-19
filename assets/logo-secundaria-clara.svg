@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 150" role="img" aria-labelledby="title desc">
+  <title id="title">Mattos Digital Solutions</title><desc id="desc">Logo horizontal clara para fundos escuros</desc>
+  <defs><linearGradient id="blue" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#2563eb"/><stop offset="1" stop-color="#4790ff"/></linearGradient><linearGradient id="teal" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#14b8a6"/><stop offset="1" stop-color="#22d3c1"/></linearGradient></defs>
+  <g transform="translate(12 20)"><path fill="#fff" d="M0 105V6l65 62v36L23 64v41H0Z"/><path fill="url(#blue)" d="m52 48 69-48v28L70 67 52 48Z"/><path fill="url(#teal)" d="m99 58 22-21v68H99V58Z"/></g>
+  <path d="M160 20v105" stroke="#64748b" stroke-width="1"/>
+  <text x="181" y="88" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="69" font-weight="800" letter-spacing="5">MATTOS</text>
+  <text x="185" y="123" fill="#4b86ff" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="10">DIGITAL SOLUTIONS</text>
+</svg>

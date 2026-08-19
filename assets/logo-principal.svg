@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
+  <title id="title">Mattos Digital Solutions</title><desc id="desc">Logo principal da Mattos Digital Solutions</desc>
+  <defs><linearGradient id="blue" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#2563eb"/><stop offset="1" stop-color="#1674f5"/></linearGradient><linearGradient id="teal" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#14b8a6"/><stop offset="1" stop-color="#19c4b3"/></linearGradient></defs>
+  <g transform="translate(28 30)"><path fill="#0f172a" d="M0 210V18l112 107v82l-72-69v72H0Z"/><path fill="url(#blue)" d="m91 102 120-102v54L124 132 91 102Z"/><path fill="url(#teal)" d="m174 119 37-34v125h-37v-91Z"/></g>
+  <text x="295" y="170" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="128" font-weight="800" letter-spacing="7">MATTOS</text>
+  <text x="302" y="226" fill="#2563eb" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" letter-spacing="18">DIGITAL SOLUTIONS</text>
+  <path d="M445 269h67" stroke="#14b8a6" stroke-width="5"/>
+  <text x="145" y="296" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="600" letter-spacing="8">PRESENÇA DIGITAL QUE <tspan fill="#14b8a6">GERA NEGÓCIOS</tspan></text>
+</svg>
